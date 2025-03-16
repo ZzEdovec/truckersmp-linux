@@ -9,4 +9,4 @@ This is only the first version of the launcher. It may contain errors and flaws.
 ## ⬇️ Installing
 Download latest release from [releases](https://github.com/ZzEdovec/truckersmp-linux/releases) and execute the downloaded file (`chmod +x` may be required)
 #### ‼️ Dependency notice
-The launcher will not be able to work with the game without the system-wide installed [truckersmp-cli](https://github.com/truckersmp-cli/truckersmp-cli).
+The launcher will not be able to work with the game without the system-wide installed [truckersmp-cli](https://github.com/truckersmp-cli/truckersmp-cli#install).
