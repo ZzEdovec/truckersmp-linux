@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512" prefWidth="720" styleClass="">
+  <children>
+    <LabelEx alignment="TOP_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="24" layoutY="24" prefHeight="64" prefWidth="600" styleClass="label " text="1. In the Steam library, right-click on the game and click Properties&#10;2. Go to the Compatibility tab, enable Steam Play compatibility tool and select Proton Experimental, Proton Hotfix or Proton-GE if it is installed" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="true">
+      <font>
+        <Font name="System Regular" size="15"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+    <ImageViewEx autoSize="false" centered="true" focusTraversable="false" height="352" id="image" layoutX="92" layoutY="104" mosaic="false" mosaicGap="0" proportional="true" stretch="true" styleClass="" textFill="#000000" width="536">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/Снимок экрана_20250315_232251.png" visible="1"/>
+  </children>
+</AnchorPane>

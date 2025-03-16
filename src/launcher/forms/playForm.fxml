@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="592" prefWidth="1080" styleClass="">
+  <children>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="0" layoutY="0" prefHeight="29" prefWidth="144" styleClass="label " text="News" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+    <ScrollPane focusTraversable="false" hbarPolicy="NEVER" hvalue="0" id="newsContainer" layoutX="0" layoutY="40" opacity="0" prefHeight="456" prefWidth="992" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+      <content>
+        <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="336" prefWidth="720" styleClass="">
+          <children>
+            <TilePane alignment="TOP_LEFT" focusTraversable="false" hgap="5" id="tilePane" layoutX="32" layoutY="32" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefColumns="5" prefHeight="264" prefRows="5" prefWidth="296" styleClass="" tileAlignment="CENTER" vgap="5">
+              <children/>
+            </TilePane>
+            <Data cursor="DEFAULT" enabled="1" id="data-tilePane" visible="1"/>
+            <FlowPane alignment="TOP_LEFT" columnHalignment="LEFT" focusTraversable="false" hgap="5" id="flowPane" layoutX="472" layoutY="88" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" orientation="HORIZONTAL" prefHeight="248" prefWidth="248" rowValignment="CENTER" styleClass="" vgap="5">
+              <children/>
+            </FlowPane>
+            <Data cursor="DEFAULT" enabled="1" id="data-flowPane" visible="1"/>
+          </children>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <Data cursor="DEFAULT" enabled="1" id="data-newsContainer" visible="1"/>
+    <ProgressBar focusTraversable="false" id="progressBar" layoutX="0" layoutY="520" prefHeight="56" prefWidth="392" progress="0" styleClass="progress-bar "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-progressBar" visible="1"/>
+    <Button alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="gameSelector" layoutX="408" layoutY="520" prefHeight="56" prefWidth="392" styleClass="button gameselector-button " text="Euro Truck Simulator 2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="13"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/eurotruck.png" id="data-gameSelector" visible="1"/>
+    <Button AnchorPane.bottomAnchor="136" AnchorPane.rightAnchor="232" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="button" layoutX="696" layoutY="400" prefHeight="56" prefWidth="152" styleClass="button main-button " text="Play" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="15"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/play.png" id="data-button" visible="1"/>
+  </children>
+</AnchorPane>

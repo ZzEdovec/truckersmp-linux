@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" styleClass="">
+  <children>
+    <ScrollPane fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" hvalue="0" id="newsContainer" layoutX="208" layoutY="152" prefHeight="456" prefWidth="992" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+      <content>
+        <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="456" prefWidth="992" styleClass="">
+          <children/>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <ScrollPane fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" hvalue="0" id="eventsContainer" layoutX="208" layoutY="152" prefHeight="548" prefWidth="992" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
+      <content>
+        <AnchorPane focusTraversable="false" id="" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="548" prefWidth="992" styleClass="">
+          <children/>
+        </AnchorPane>
+      </content>
+    </ScrollPane>
+    <Panel backgroundColor="#00000000" borderColor="#c0c0c0" borderRadius="0" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="settingsPanel" layoutX="208" layoutY="152" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="548" prefWidth="992" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+      <children>
+        <Panel backgroundColor="#0d1528" borderColor="#c0c0c0" borderRadius="10" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="panelAlt" layoutX="176" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="152" prefWidth="312" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="etsPathLabel" layoutX="24" layoutY="16" prefHeight="18" prefWidth="200" styleClass="label " text="Path to the ETS 2 directory" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-etsPathLabel" visible="1"/>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="atsPathLabel" layoutX="24" layoutY="80" prefHeight="18" prefWidth="200" styleClass="label " text="Path to the ATS directory" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-atsPathLabel" visible="1"/>
+            <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="false" id="atsPath" layoutX="24" layoutY="104" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="Default " styleClass="text-input text-field " text="">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </TextField>
+            <Data cursor="HAND" enabled="1" id="data-atsPath" visible="1"/>
+            <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="false" id="etsPath" layoutX="24" layoutY="40" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="Default " styleClass="text-input text-field " text="">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </TextField>
+            <Data cursor="HAND" enabled="1" id="data-etsPath" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="13"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panelAlt" visible="1"/>
+        <Panel backgroundColor="#0d1528" borderColor="#c0c0c0" borderRadius="10" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="panel" layoutX="504" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="152" prefWidth="312" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="etsConsoleLabel" layoutX="24" layoutY="16" prefHeight="18" prefWidth="200" styleClass="label " text="ETS 2 console options" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="atsConsoleLabel" layoutX="24" layoutY="80" prefHeight="18" prefWidth="200" styleClass="label " text="ATS console options" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="false" id="atsConsole" layoutX="24" layoutY="104" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="Default" styleClass="text-input text-field " text="">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </TextField>
+            <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="false" id="etsConsole" layoutX="24" layoutY="40" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="Default" styleClass="text-input text-field " text="">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </TextField>
+            <Data cursor="DEFAULT" enabled="1" id="data-etsConsoleLabel" visible="1"/>
+            <Data cursor="DEFAULT" enabled="1" id="data-atsConsoleLabel" visible="1"/>
+            <Data cursor="DEFAULT" enabled="1" id="data-atsConsole" visible="1"/>
+            <Data cursor="DEFAULT" enabled="1" id="data-etsConsole" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="13"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel" visible="1"/>
+        <Panel backgroundColor="#0d1528" borderColor="#c0c0c0" borderRadius="10" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="panel3" layoutX="176" layoutY="168" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="88" prefWidth="312" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="accountNameLabel" layoutX="24" layoutY="16" prefHeight="18" prefWidth="200" styleClass="label " text="Steam account login" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <TextField alignment="CENTER_LEFT" editable="true" focusTraversable="false" id="accountName" layoutX="24" layoutY="40" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="" styleClass="text-input text-field " text="">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </TextField>
+            <Data cursor="DEFAULT" enabled="1" id="data-accountNameLabel" visible="1"/>
+            <Data cursor="DEFAULT" enabled="1" id="data-accountName" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="13"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel3" visible="1"/>
+        <Panel backgroundColor="#0d1528" borderColor="#c0c0c0" borderRadius="10" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="panel4" layoutX="504" layoutY="168" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="88" prefWidth="312" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="backendLabel" layoutX="24" layoutY="16" prefHeight="18" prefWidth="200" styleClass="label " text="Render backend" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </LabelEx>
+            <Data cursor="DEFAULT" enabled="1" id="data-backendLabel" visible="1"/>
+            <ComboBox editable="false" focusTraversable="true" id="backend" layoutX="24" layoutY="40" prefHeight="27" prefWidth="264" promptText="" styleClass="combo-box-base combo-box " value="auto" visibleRowCount="10">
+              <items xmlns:fx="http://javafx.com/fxml">
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="auto"/>
+                  <String fx:value="dx11"/>
+                  <String fx:value="gl"/>
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Data cursor="DEFAULT" enabled="1" id="data-backend" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="13"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel4" visible="1"/>
+        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="360" layoutY="280" prefHeight="88" prefWidth="272" styleClass="label " text="Launcher by queinu&#10;Working by truckersmp-cli&#10;Icons by icons8&#10;&#10;With love for TruckersMP community" textAlignment="CENTER" textFill="#b3b3b3" underline="false" wrapText="false">
+          <font>
+            <Font name="System Regular" size="12"/>
+          </font>
+        </LabelEx>
+        <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+      </children>
+      <titleFont>
+        <Font name="System Regular" size="13"/>
+      </titleFont>
+    </Panel>
+    <Button AnchorPane.bottomAnchor="19" AnchorPane.rightAnchor="20" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="playButton" layoutX="1028" layoutY="625" prefHeight="56" prefWidth="152" styleClass="button main-button " text="Play" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="15"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/play.png" id="data-playButton" visible="1"/>
+    <ImageViewEx AnchorPane.leftAnchor="24" AnchorPane.topAnchor="16" autoSize="false" centered="true" focusTraversable="false" height="64" id="image" layoutX="24" layoutY="16" mosaic="false" mosaicGap="0" proportional="true" stretch="true" styleClass="" textFill="#000000" width="224">
+      <font>
+        <Font name="System Regular" size="12"/>
+      </font>
+    </ImageViewEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-image" image=".data/img/truckersmp-logo-sm.png" visible="1"/>
+    <Separator AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="88" focusTraversable="false" id="separator" layoutX="0" layoutY="88" orientation="HORIZONTAL" prefHeight="8" prefWidth="1200" styleClass="separator "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-separator" visible="1"/>
+    <Button AnchorPane.rightAnchor="376" AnchorPane.topAnchor="26" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="communityButton" layoutX="680" layoutY="26" prefHeight="40" prefWidth="144" styleClass="button menu-button " text="Community ⏷" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="14"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/community.png" id="data-communityButton" visible="1"/>
+    <Button AnchorPane.rightAnchor="200" AnchorPane.topAnchor="26" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="socialButton" layoutX="856" layoutY="26" prefHeight="40" prefWidth="144" styleClass="button menu-button " text="Social Media ⏷" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="14"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/share.png" id="data-socialButton" visible="1"/>
+    <Button AnchorPane.rightAnchor="24" AnchorPane.topAnchor="26" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="contactButton" layoutX="1032" layoutY="26" prefHeight="40" prefWidth="144" styleClass="button menu-button " text="Contact Us ⏷" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="14"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/send.png" id="data-contactButton" visible="1"/>
+    <Button alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="main" layoutX="32" layoutY="120" prefHeight="48" prefWidth="160" styleClass="button menu-button " text="Main" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="15"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/main.png" id="data-main" visible="1"/>
+    <Button alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="events" layoutX="32" layoutY="176" prefHeight="48" prefWidth="160" styleClass="button menu-button " text="Events" textAlignment="LEFT" textFill="#e6e6e6" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="15"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/events.png" id="data-events" visible="1"/>
+    <Button alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="button7" layoutX="32" layoutY="232" prefHeight="48" prefWidth="160" styleClass="button menu-button " text="Server Status" textAlignment="LEFT" textFill="#e6e6e6" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="15"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/server.png" id="data-button7" visible="1"/>
+    <Button alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="settings" layoutX="32" layoutY="632" prefHeight="48" prefWidth="160" styleClass="button menu-button " text="Settings" textAlignment="LEFT" textFill="#e6e6e6" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="15"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/settings.png" id="data-settings" visible="1"/>
+    <LabelEx alignment="CENTER_LEFT" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="tabLabel" layoutX="208" layoutY="112" prefHeight="29" prefWidth="144" styleClass="label " text="News" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Regular" size="20"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-tabLabel" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-newsContainer" visible="1"/>
+    <Button AnchorPane.rightAnchor="544" AnchorPane.topAnchor="26" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="donateButton" layoutX="440" layoutY="26" prefHeight="40" prefWidth="216" styleClass="button menu-button " text="Support this launcher" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="14"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/donate.png" id="data-donateButton" visible="1"/>
+    <ProgressBar AnchorPane.bottomAnchor="19" AnchorPane.leftAnchor="208" focusTraversable="false" id="progressBar" layoutX="208" layoutY="625" prefHeight="56" prefWidth="392" progress="0" styleClass="progress-bar "/>
+    <Data cursor="DEFAULT" enabled="1" id="data-progressBar" visible="1"/>
+    <Button AnchorPane.bottomAnchor="19" AnchorPane.rightAnchor="192" alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="gameSelector" layoutX="616" layoutY="625" prefHeight="56" prefWidth="392" styleClass="button gameselector-button " text="Euro Truck Simulator 2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="13"/>
+      </font>
+    </Button>
+    <Data cursor="HAND" enabled="1" graphic=".data/img/eurotruck.png" id="data-gameSelector" visible="1"/>
+    <Data cursor="DEFAULT" enabled="1" id="data-eventsContainer" visible=""/>
+    <Data cursor="DEFAULT" enabled="1" id="data-settingsPanel" visible=""/>
+    <LabelEx AnchorPane.bottomAnchor="38" AnchorPane.leftAnchor="232" alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="progressLabel" layoutX="232" layoutY="644" prefHeight="18" prefWidth="344" styleClass="label " text="No tasks" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+      <font>
+        <Font name="System Bold" size="13"/>
+      </font>
+    </LabelEx>
+    <Data cursor="DEFAULT" enabled="1" id="data-progressLabel" visible="1"/>
+  </children>
+</AnchorPane>
