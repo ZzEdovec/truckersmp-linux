@@ -1,3 +1,4 @@
+![Launcher window](https://github.com/ZzEdovec/truckersmp-linux/raw/refs/heads/main/launcher-window.png)
 # 🚛 TruckersMP Launcher For Linux
 ## ❓ What is it?
 In fact, this is a graphical wrapper over the [truckersmp-cli](https://github.com/truckersmp-cli/truckersmp-cli).
