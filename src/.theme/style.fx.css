@@ -125,3 +125,11 @@
     -fx-text-fill:#e6e6e6;
     -fx-background-radius:2px;
 }
+
+.check-box .box{
+    -fx-background-color:#324053;
+}
+
+.check-box:selected .box .mark{
+    -fx-background-color:Gray;
+}

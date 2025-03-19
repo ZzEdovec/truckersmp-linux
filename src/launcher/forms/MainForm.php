@@ -120,6 +120,7 @@ class MainForm extends AbstractForm
         $this->gameSelector->data('graphic-ets',$this->gameSelector->graphic);
         $this->gameSelector->data('graphic-ats',new UXImageView(new UXImage('res://.data/img/amtruck.png')));
         
+        
         try {
             $news = Json::decode(fs::get('https://api.truckersmp.com/v2/news'));
             if ($news['error'] == true)
@@ -155,8 +156,11 @@ class MainForm extends AbstractForm
         $this->etsPath->text = $this->appModule()->ini->get('etsPath','Game directories');
         $this->etsConsole->text = $this->appModule()->ini->get('etsParams','Game params');
         $this->atsPath->text = $this->appModule()->ini->get('atsPath','Game directories');
+        $this->atsConsole->text = $this->appModule()->ini->get('atsParams','Game params');
         $this->accountName->text = $this->appModule()->ini->get('accountLogin','Steam');
-        $this->backend->value = $this->appModule()->ini->get('renderBackend','Game params') ?? 'auto';
+        $this->backend->value = $this->appModule()->ini->get('renderBackend','Game params') ?? 'DirectX11 (DXVK)';
+        $this->gamemode->selected = $this->appModule()->ini->get('gamemodeUse','System');
+        $this->libraryfoldersSave->selected = $this->appModule()->ini->get('libraryFoldersSave','Steam');
     }
 
     /**
@@ -295,6 +299,9 @@ class MainForm extends AbstractForm
     function doBackendAction(UXEvent $e = null)
     {    
         $this->appModule()->ini->set('renderBackend',$e->sender->value,'Game params');
+        
+        if ($e->sender->value != 'DirectX11 (DXVK)')
+            UXDialog::show('Using something other than DXVK can significantly reduce performance!','WARNING');
     }
 
     /**
@@ -328,8 +335,20 @@ class MainForm extends AbstractForm
             $appID = 270880;
         }
         
+        if ($path == null)
+        {
+            UXDialog::show('Please specify the path to the game in the settings','ERROR');
+            return;
+        }
+        
+        if ($this->accountName->text == null)
+        {
+            UXDialog::show('Please enter your Steam account login in the settings','ERROR');
+            return;
+        }
+        
         if (str::contains($path,'steamapps') == false)
-            $this->toast('The game is not in the Steam library directory! Updates will only be checked when the TruckersMP is updated');
+            $this->toast('The game is not in the Steam Library directory! Updates will only be checked when the TruckersMP is updated');
         else 
         {
             $steamapps = str::sub($path,0,str::pos($path,'steamapps/') + 10);
@@ -361,5 +380,37 @@ class MainForm extends AbstractForm
     {    
         execute('xdg-open https://www.donationalerts.com/r/queinu');
     }
+
+    /**
+     * @event link.action 
+     */
+    function doLinkAction(UXEvent $e = null)
+    {    
+        $this->toast("In the libraryfolders.vdf file, Steam stores the libraries you've added on other disks. When updating via SteamCMD they are often reset, this feature prevents that from happening.");
+    }
+
+    /**
+     * @event libraryfoldersSave.click 
+     */
+    function doLibraryfoldersSaveClick(UXMouseEvent $e = null)
+    {    
+        $this->appModule()->ini->set('libraryFoldersSave',$e->sender->selected,'Steam');
+    }
+
+    /**
+     * @event gamemode.click 
+     */
+    function doGamemodeClick(UXMouseEvent $e = null)
+    {
+        if (fs::isFile('/usr/bin/gamemoderun') == false)
+        {
+            UXDialog::show('Gamemode not installed!','ERROR');
+            uiLater(function (){$this->gamemode->selected = false;});
+            return;
+        }
+        
+        $this->appModule()->ini->set('gamemodeUse',$e->sender->selected,'System');
+    }
+
 
 }

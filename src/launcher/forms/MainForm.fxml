@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700" prefWidth="1200" styleClass="">
+<?import javafx.scene.*?><?import javafx.collections.*?><?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.scene.text.*?><?import javafx.scene.image.*?><?import javafx.scene.shape.*?><?import javafx.scene.paint.*?><?import javafx.scene.web.*?><?import javafx.geometry.*?><?import java.lang.*?><?import org.develnext.jphp.ext.javafx.classes.data.*?><?import org.develnext.jphp.ext.javafx.support.*?><?import org.develnext.jphp.ext.javafx.support.control.*?><?import org.develnext.jphp.ext.game.support.*?><AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" focusTraversable="false" id="" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="704" prefWidth="1200" styleClass="">
   <children>
     <ScrollPane fitToHeight="true" fitToWidth="true" focusTraversable="false" hbarPolicy="NEVER" hvalue="0" id="newsContainer" layoutX="208" layoutY="152" prefHeight="456" prefWidth="992" styleClass="scroll-pane " vbarPolicy="AS_NEEDED" vvalue="0">
       <content>
@@ -15,7 +15,7 @@
         </AnchorPane>
       </content>
     </ScrollPane>
-    <Panel backgroundColor="#00000000" borderColor="#c0c0c0" borderRadius="0" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="settingsPanel" layoutX="208" layoutY="152" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="548" prefWidth="992" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+    <Panel backgroundColor="#00000000" borderColor="#c0c0c0" borderRadius="0" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="settingsPanel" layoutX="208" layoutY="152" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="552" prefWidth="992" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
       <children>
         <Panel backgroundColor="#0d1528" borderColor="#c0c0c0" borderRadius="10" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="panelAlt" layoutX="176" layoutY="0" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="152" prefWidth="312" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
           <children>
@@ -31,13 +31,13 @@
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-atsPathLabel" visible="1"/>
-            <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="false" id="atsPath" layoutX="24" layoutY="104" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="Default " styleClass="text-input text-field " text="">
+            <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="false" id="atsPath" layoutX="24" layoutY="104" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="" styleClass="text-input text-field " text="">
               <font>
                 <Font name="System Regular" size="12"/>
               </font>
             </TextField>
             <Data cursor="HAND" enabled="1" id="data-atsPath" visible="1"/>
-            <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="false" id="etsPath" layoutX="24" layoutY="40" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="Default " styleClass="text-input text-field " text="">
+            <TextField alignment="CENTER_LEFT" editable="false" focusTraversable="false" id="etsPath" layoutX="24" layoutY="40" prefColumnCount="12" prefHeight="27" prefWidth="264" promptText="" styleClass="text-input text-field " text="">
               <font>
                 <Font name="System Regular" size="12"/>
               </font>
@@ -109,12 +109,12 @@
               </font>
             </LabelEx>
             <Data cursor="DEFAULT" enabled="1" id="data-backendLabel" visible="1"/>
-            <ComboBox editable="false" focusTraversable="true" id="backend" layoutX="24" layoutY="40" prefHeight="27" prefWidth="264" promptText="" styleClass="combo-box-base combo-box " value="auto" visibleRowCount="10">
+            <ComboBox editable="false" focusTraversable="true" id="backend" layoutX="24" layoutY="40" prefHeight="27" prefWidth="264" promptText="" styleClass="combo-box-base combo-box " value="DirectX11 (DXVK)" visibleRowCount="10">
               <items xmlns:fx="http://javafx.com/fxml">
                 <FXCollections fx:factory="observableArrayList">
-                  <String fx:value="auto"/>
-                  <String fx:value="dx11"/>
-                  <String fx:value="gl"/>
+                  <String fx:value="Auto"/>
+                  <String fx:value="DirectX11 (DXVK)"/>
+                  <String fx:value="OpenGL"/>
                 </FXCollections>
               </items>
             </ComboBox>
@@ -125,18 +125,44 @@
           </titleFont>
         </Panel>
         <Data cursor="DEFAULT" enabled="1" id="data-panel4" visible="1"/>
-        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="360" layoutY="280" prefHeight="88" prefWidth="272" styleClass="label " text="Launcher by queinu&#10;Working by truckersmp-cli&#10;Icons by icons8&#10;&#10;With love for TruckersMP community" textAlignment="CENTER" textFill="#b3b3b3" underline="false" wrapText="false">
+        <LabelEx alignment="TOP_CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="label" layoutX="360" layoutY="376" prefHeight="88" prefWidth="272" styleClass="label " text="Launcher by queinu&#10;Working by truckersmp-cli&#10;Icons by icons8&#10;&#10;With love for TruckersMP community" textAlignment="CENTER" textFill="#b3b3b3" underline="false" wrapText="false">
           <font>
             <Font name="System Regular" size="12"/>
           </font>
         </LabelEx>
         <Data cursor="DEFAULT" enabled="1" id="data-label" visible="1"/>
+        <Panel backgroundColor="#0d1528" borderColor="#c0c0c0" borderRadius="10" borderStyle="NONE" borderWidth="0" focusTraversable="false" id="panel5" layoutX="340" layoutY="272" maxHeight="-1" maxWidth="-1" minHeight="-1" minWidth="-1" prefHeight="88" prefWidth="312" styleClass="" titleColor="#000000" titleOffset="15" titlePosition="TOP_LEFT">
+          <children>
+            <CheckBox alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="libraryfoldersSave" layoutX="32" layoutY="16" prefHeight="24" prefWidth="248" styleClass="check-box " text="Save libraryfolders.vdf state" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </CheckBox>
+            <Data cursor="HAND" enabled="1" id="data-libraryfoldersSave" visible="1"/>
+            <Hyperlink alignment="CENTER_RIGHT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="link" layoutX="288" layoutY="20" prefHeight="17" prefWidth="8" styleClass="hyperlink " text="?" textAlignment="RIGHT" wrapText="false">
+              <font>
+                <Font name="System Regular" size="12"/>
+              </font>
+            </Hyperlink>
+            <Data cursor="HAND" enabled="1" id="data-link" visible="1"/>
+            <CheckBox alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="gamemode" layoutX="32" layoutY="48" prefHeight="24" prefWidth="248" styleClass="check-box " text="Use gamemode" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+              <font>
+                <Font name="System Bold" size="12"/>
+              </font>
+            </CheckBox>
+            <Data cursor="HAND" enabled="1" id="data-gamemode" visible="1"/>
+          </children>
+          <titleFont>
+            <Font name="System Regular" size="13"/>
+          </titleFont>
+        </Panel>
+        <Data cursor="DEFAULT" enabled="1" id="data-panel5" visible="1"/>
       </children>
       <titleFont>
         <Font name="System Regular" size="13"/>
       </titleFont>
     </Panel>
-    <Button AnchorPane.bottomAnchor="19" AnchorPane.rightAnchor="20" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="playButton" layoutX="1028" layoutY="625" prefHeight="56" prefWidth="152" styleClass="button main-button " text="Play" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+    <Button AnchorPane.bottomAnchor="19" AnchorPane.rightAnchor="20" alignment="CENTER" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="4" id="playButton" layoutX="1028" layoutY="629" prefHeight="56" prefWidth="152" styleClass="button main-button " text="Play" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="15"/>
       </font>
@@ -205,9 +231,9 @@
       </font>
     </Button>
     <Data cursor="HAND" enabled="1" graphic=".data/img/donate.png" id="data-donateButton" visible="1"/>
-    <ProgressBar AnchorPane.bottomAnchor="19" AnchorPane.leftAnchor="208" focusTraversable="false" id="progressBar" layoutX="208" layoutY="625" prefHeight="56" prefWidth="392" progress="0" styleClass="progress-bar "/>
+    <ProgressBar AnchorPane.bottomAnchor="19" AnchorPane.leftAnchor="208" focusTraversable="false" id="progressBar" layoutX="208" layoutY="629" prefHeight="56" prefWidth="392" progress="0" styleClass="progress-bar "/>
     <Data cursor="DEFAULT" enabled="1" id="data-progressBar" visible="1"/>
-    <Button AnchorPane.bottomAnchor="19" AnchorPane.rightAnchor="192" alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="gameSelector" layoutX="616" layoutY="625" prefHeight="56" prefWidth="392" styleClass="button gameselector-button " text="Euro Truck Simulator 2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
+    <Button AnchorPane.bottomAnchor="19" AnchorPane.rightAnchor="192" alignment="CENTER_LEFT" contentDisplay="LEFT" ellipsisString="..." focusTraversable="true" graphicTextGap="10" id="gameSelector" layoutX="616" layoutY="629" prefHeight="56" prefWidth="392" styleClass="button gameselector-button " text="Euro Truck Simulator 2" textAlignment="LEFT" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="13"/>
       </font>
@@ -215,7 +241,7 @@
     <Data cursor="HAND" enabled="1" graphic=".data/img/eurotruck.png" id="data-gameSelector" visible="1"/>
     <Data cursor="DEFAULT" enabled="1" id="data-eventsContainer" visible=""/>
     <Data cursor="DEFAULT" enabled="1" id="data-settingsPanel" visible=""/>
-    <LabelEx AnchorPane.bottomAnchor="38" AnchorPane.leftAnchor="232" alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="progressLabel" layoutX="232" layoutY="644" prefHeight="18" prefWidth="344" styleClass="label " text="No tasks" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
+    <LabelEx AnchorPane.bottomAnchor="38" AnchorPane.leftAnchor="232" alignment="CENTER" autoSize="false" contentDisplay="LEFT" ellipsisString="..." focusTraversable="false" graphicTextGap="4" id="progressLabel" layoutX="232" layoutY="648" prefHeight="18" prefWidth="344" styleClass="label " text="No tasks" textAlignment="CENTER" textFill="#ffffff" underline="false" wrapText="false">
       <font>
         <Font name="System Bold" size="13"/>
       </font>
