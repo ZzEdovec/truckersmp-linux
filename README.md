@@ -1,4 +1,9 @@
 ![Launcher window](https://github.com/ZzEdovec/truckersmp-linux/raw/refs/heads/main/launcher-window.png)
+# ‼️ Deprecated
+Use `protontricks-launch` from the protontricks package ([GitHub](https://github.com/Matoking/protontricks), [AUR](https://aur.archlinux.org/packages/protontricks)), which is NOT installed in a sandbox like Flatpak, to launch the original TruckersMP launcher with the Euro Truck Simulator 2 prefix. This launcher is no longer required and its development has been discontinued.
+
+But the story doesn't end! I'm working on a launcher that will combine the launchers of ALL the games that have their own (not Steam and not Epic Games). Stay in touch!
+
 # 🚛 TruckersMP Launcher For Linux
 ## ❓ What is it?
 In fact, this is a graphical wrapper over the [truckersmp-cli](https://github.com/truckersmp-cli/truckersmp-cli).
